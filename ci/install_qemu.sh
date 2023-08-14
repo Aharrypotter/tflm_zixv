@@ -29,8 +29,8 @@ TEMP_ARCHIVE="/tmp/qemu.tar.xz"
 
 INSTALL_PREFIX=${1:-"/usr/local"}
 
-echo >&2 "Downloading from url: ${LINUX_PORTABLE_URL}"
-wget ${LINUX_PORTABLE_URL} -O ${TEMP_ARCHIVE} >&2
+# echo >&2 "Downloading from url: ${LINUX_PORTABLE_URL}"
+# wget ${LINUX_PORTABLE_URL} -O ${TEMP_ARCHIVE} >&2
 
 TEMP_DIR="$(mktemp -d)"
 tar xJf ${TEMP_ARCHIVE} --strip-components=1 --directory ${TEMP_DIR} >&2
