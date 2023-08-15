@@ -63,8 +63,7 @@ bazel build tensorflow/lite/micro/examples/hello_world:train
 ```
 And to run it
 ```bash
-bazel-bin/tensorflow/lite/micro/examples/hello_world/train --save_tf_model 
---save_dir=/tmp/model_created/
+bazel-bin/tensorflow/lite/micro/examples/hello_world/train --save_tf_model --save_dir=/tmp/model_created/
 ```
 The above script will create a TF model and TFlite model inside the 
 `/tmp/model_created` directory. 
