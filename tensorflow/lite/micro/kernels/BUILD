@@ -233,6 +233,7 @@ tflm_kernel_cc_library(
         "logistic_common.cc",
         "lstm_eval.cc",
         "lstm_eval_common.cc",
+        "matrix_multi.cc",
         "maximum_minimum.cc",
         "mirror_pad.cc",
         "mul.cc",
@@ -937,6 +938,21 @@ cc_test(
     deps = [
         ":lstm_eval_test_lib",
         "//tensorflow/lite/micro:debug_log",
+        "//tensorflow/lite/micro/testing:micro_test",
+    ],
+)
+
+cc_test(
+    name = "matrix_multi_test",
+    srcs = [
+        "matrix_multi_test.cc",
+    ],
+    deps = [
+        ":kernel_runner",
+        "//tensorflow/lite/c:common",
+        "//tensorflow/lite/micro:debug_log",
+        "//tensorflow/lite/micro:op_resolvers",
+        "//tensorflow/lite/micro:test_helpers",
         "//tensorflow/lite/micro/testing:micro_test",
     ],
 )

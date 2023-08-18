@@ -87,7 +87,6 @@ TF model as the source_model_dir here. The quant model
 The `ptq.py` script will convert the `TF model` found inside the 
 `/tmp/model_created` folder and convert it to a `int8` TFlite model.
 ```bash
-bazel-bin/tensorflow/lite/micro/examples/hello_world/quantization/ptq  
---source_model_dir=/tmp/model_created --target_dir=/tmp/quant_model/
+bazel-bin/tensorflow/lite/micro/examples/hello_world/quantization/ptq --source_model_dir=/tmp/model_created --target_dir=/tmp/quant_model/
 ```
 

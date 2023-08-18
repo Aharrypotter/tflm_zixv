@@ -84,6 +84,7 @@ TFLMRegistration Register_LOGICAL_AND();
 TFLMRegistration Register_LOGICAL_NOT();
 TFLMRegistration Register_LOGICAL_OR();
 TFLMRegistration Register_LOGISTIC();
+TFLMRegistration Register_MATRIX_MULTI();
 TFLMRegistration Register_MAX_POOL_2D();
 TFLMRegistration Register_MAXIMUM();
 TFLMRegistration Register_MEAN();
